@@ -8,7 +8,7 @@ LLaMEA rozwiązuje problem optymalizacji ciągłej black-box:
 
 $$\text{minimize } \mathcal{F}: \mathcal{S} \rightarrow \mathbb{R}$$
 
-gdzie $\mathcal{S} \subseteq \mathbb{R}^d$ to przestrzeń poszukiwań zdefiniowana przez ograniczenia pudełkowe (box constraints): $\mathcal{S} = \times_{i=1}^{d}[l_i, u_i]$, gdzie $l_i < u_i$ dla każdego wymiaru $i$ [[1]]([[1]]).
+gdzie $\mathcal{S} \subseteq \mathbb{R}^d$ to przestrzeń poszukiwań zdefiniowana przez ograniczenia pudełkowe (box constraints): $\mathcal{S} = \times_{i=1}^{d}[l_i, u_i]$, gdzie $l_i < u_i$ dla każdego wymiaru $i$ [^1].
 
 **Black-box** oznacza, że nie mamy wzoru analitycznego ani gradientu — możemy tylko ewaluować funkcję celu $\mathcal{F}$ w dowolnym punkcie $\vec{x} \in \mathcal{S}$.
 
@@ -51,7 +51,7 @@ Metaheurystyki nie wymagają gradientu i są odporne na:
 - **Szum** — stochastyczne funkcje celu
 - **Ograniczenia** — proste do zakodowania jako kary
 
-Ich siła pochodzi z **inspirowanych naturą** mechanizmów przeszukiwania przestrzeni, które balansują dwie sprzeczne strategie [[1]]([[1]]):
+Ich siła pochodzi z **inspirowanych naturą** mechanizmów przeszukiwania przestrzeni, które balansują dwie sprzeczne strategie [^1]:
 - **Eksploracja** (exploration) — odkrywanie nowych regionów przestrzeni
 - **Eksploatacja** (exploitation) — dokładne przeszukiwanie obiecujących regionów
 
@@ -61,8 +61,8 @@ LLaMEA rozwiązuje problemy z ograniczeniami pudełkowymi — każdy wymiar $d$ 
 
 **Zadanie dla czytelnika:** Wyobraź sobie problem optymalizacji kształtu anteny — każdy parametr geometryczny ma fizycznie uzasadnione min/max. Jak zamodelować problem z ograniczeniami nierównościowymi (np. napięcie < 5V)?
 
-Odpowiedź: LLaMEA koncentruje się na **box-constrained continuous optimization**, a bardziej złożone ograniczenia można modelować przez funkcje kary lub transformacje przestrzeni poszukiwań [[1]]([[1]]).
+Odpowiedź: LLaMEA koncentruje się na **box-constrained continuous optimization**, a bardziej złożone ograniczenia można modelować przez funkcje kary lub transformacje przestrzeni poszukiwań [^1].
 
 ---
 
-**Następna strona:** [[02-evolutionary-computation]] — jak ewolucja biologiczna stała się paradygmatem optymalizacji
+**Następna strona:** [02 — Obliczenia ewolucyjne](pages/02-evolutionary-computation) — jak ewolucja biologiczna stała się paradygmatem optymalizacji

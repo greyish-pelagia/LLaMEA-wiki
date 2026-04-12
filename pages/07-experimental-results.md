@@ -1,10 +1,10 @@
 # Wyniki Eksperymentalne: Co LLaMEA Faktycznie Osiąga
 
-Ta strona podsumowuje kluczowe wyniki eksperymentalne z arXiv paper [[1]]([[1]]) i blogu [[2]]([[2]]). Bez ściemniania — co konkretnie działa, a co wymaga zastrzeżeń.
+Ta strona podsumowuje kluczowe wyniki eksperymentalne z arXiv paper [^1] i blogu [^2]. Bez ściemniania — co konkretnie działa, a co wymaga zastrzeżeń.
 
 ## Główne twierdzenie
 
-> LLaMEA generuje algorytmy metaheurystyczne które **przewyższają lub dorównują** CMA-ES i Differential Evolution na BBOB, przy czym algorytmy te zostały **automatycznie wygenerowane** bez ręcznego projektowania [[1]]([[1]]).
+> LLaMEA generuje algorytmy metaheurystyczne które **przewyższają lub dorównują** CMA-ES i Differential Evolution na BBOB, przy czym algorytmy te zostały **automatycznie wygenerowane** bez ręcznego projektowania [^1].
 
 ## Wyniki liczbowe
 
@@ -17,18 +17,18 @@ LLaMEA wygrywa z:
 
 ### Na 10 i 20 wymiarach
 
-Wyniki są **konkurencyjne**, choć pełne wygrane są trudniejsze do uzyskania. LLaMEA nie widziało tych wymiarów podczas generacji — sukces w 10D/20D to **ekstrapolacja** [[1]]([[1]]).
+Wyniki są **konkurencyjne**, choć pełne wygrane są trudniejsze do uzyskania. LLaMEA nie widziało tych wymiarów podczas generacji — sukces w 10D/20D to **ekstrapolacja** [^1].
 
 ### Jakość wygenerowanych algorytmów
 
-Wygenerowane algorytmy to nie proste warianty istniejących metaheurystyk. Paper [[1]]([[1]]) opisuje że LLM:
+Wygenerowane algorytmy to nie proste warianty istniejących metaheurystyk. Paper [^1] opisuje że LLM:
 - Tworzy **nowe kombinacje operatorów**
 - Wykorzystuje **wiedzę o funkcjach benchmarkowych** (mimo black-box)
 - Implementuje **hybrydowe strategie** (łączenie faz eksploracji i eksploatacji)
 
 ## Analiza przebiegów zbieżności
 
-IOHanalyzer generuje wykresy ECDF (Empirical Cumulative Distribution Function) [[1]]([[1]]) — pokazujące dla każdego budżetu ewaluacji, jaka frakcja uruchomień osiągnęła cel.
+IOHanalyzer generuje wykresy ECDF (Empirical Cumulative Distribution Function) [^1] — pokazujące dla każdego budżetu ewaluacji, jaka frakcja uruchomień osiągnęła cel.
 
 Na tych wykresach LLaMEA:
 - **Szybciej startuje** (szybsza zbieżność w początkowej fazie)
@@ -50,7 +50,7 @@ Na tych wykresach LLaMEA:
 
 ## Praktyczne implikacje
 
-Jeśli masz problem optymalizacyjny [[2]]([[2]]):
+Jeśli masz problem optymalizacyjny [^2]:
 
 | Scenariusz | Rekomendacja |
 |-----------|------------|
@@ -61,8 +61,8 @@ Jeśli masz problem optymalizacyjny [[2]]([[2]]):
 
 ## Porównanie z AlphaEvolve (Google DeepMind)
 
-LLaMEA jest opisywane jako **"fully-open alternative to Google DeepMind's AlphaEvolve"** [[3]]([[3]]). AlphaEvolve używa Gemini do ewolucji algorytmów, ale jest zamknięte. LLaMEA jest MIT-licencjonowane i w pełni reprodukowalne.
+LLaMEA jest opisywane jako **"fully-open alternative to Google DeepMind's AlphaEvolve"** [^3]. AlphaEvolve używa Gemini do ewolucji algorytmów, ale jest zamknięte. LLaMEA jest MIT-licencjonowane i w pełni reprodukowalne.
 
 ---
 
-**Następna strona:** [[08-related-research]] — co dzieje się w sąsiednich obszarach
+**Następna strona:** [08 — Badania powiązane](pages/08-related-research) — co dzieje się w sąsiednich obszarach

@@ -26,7 +26,7 @@ LLaMEA to nie jedna klasa Pythona — to **zintegrowany system** z kilkoma klucz
 
 **Interfejs:** `llamea/llm.py`
 
-Obsługuje komunikację z LLM (GPT-4, GPT-3.5-turbo, lub modele lokalne przez OpenAI-compatible API) [[1]]([[1]])[[2]]([[2]]).
+Obsługuje komunikację z LLM (GPT-4, GPT-3.5-turbo, lub modele lokalne przez OpenAI-compatible API) [^1][^2].
 
 Funkcje:
 - Wysyłanie promptów z opisem problemu
@@ -35,7 +35,7 @@ Funkcje:
 - Zarządzanie kosztami API
 
 ```python
-# Uproszczony interfejs z dokumentacji [[3]]([[3]])
+# Uproszczony interfejs z dokumentacji [^3]
 from llamdea import LLaMEA, OpenAI_LLM
 
 llm = OpenAI_LLM(model="gpt-4")
@@ -47,7 +47,7 @@ best_algorithm = optimizer.run()
 
 **Interfejs:** `llamea/llamea.py` + `llamea/solution.py`
 
-Implementuje standardową pętlę ewolucyjną [[1]]([[1]]):
+Implementuje standardową pętlę ewolucyjną [^1]:
 - Reprezentacja osobnika: kod algorytmu (string) + metryki fitness
 - Selekcja: elitarny wybór najlepszych
 - Mutacja: LLM generuje warianty
@@ -57,7 +57,7 @@ Implementuje standardową pętlę ewolucyjną [[1]]([[1]]):
 
 **Interfejs:** `benchmarks/ma_bbob/run_mabbob.py`
 
-Automatyczne uruchamianie algorytmów na benchmarku BBOB [[1]]([[1]])[[4]]([[4]]):
+Automatyczne uruchamianie algorytmów na benchmarku BBOB [^1][^4]:
 - Łączy się z IOHprofiler
 - Uruchamia algorytm na 24 funkcjach testowych
 - Zbiera metryki: przebieg zbieżności, wartości końcowe
@@ -106,11 +106,11 @@ LLaMEA/
 └── requirements.txt
 ```
 
-Według [[3]]([[3]]) projekt jest w pełni open-source (MIT License).
+Według [^3] projekt jest w pełni open-source (MIT License).
 
 ## Konfiguracja eksperymentu
 
-LLaMEA pozwala na konfigurację [[1]]([[1]])[[3]]([[3]]):
+LLaMEA pozwala na konfigurację [^1][^3]:
 - **LLM provider:** OpenAI (GPT-4), Azure, lub lokalny przez OpenAI-compatible API
 - **Budget:** maksymalna liczba ewaluacji / pokoleń
 - **Population size:** rozmiar populacji algorytmów
@@ -119,4 +119,4 @@ LLaMEA pozwala na konfigurację [[1]]([[1]])[[3]]([[3]]):
 
 ---
 
-**Następna strona:** [[06-bbob-benchmark]] — jak mierzymy jakość algorytmu
+**Następna strona:** [06 — Benchmark BBOB](pages/06-bbob-benchmark) — jak mierzymy jakość algorytmu

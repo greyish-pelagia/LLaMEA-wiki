@@ -17,7 +17,7 @@ Ta strona pokazuje jak w 5 minut uruchomić LLaMEA na własnym komputerze. Zakł
 pip install llamda
 ```
 
-To zainstaluje główny pakiet. Uwaga: IOHprofiler może wymagać osobnej instalacji [[1]]([[1]]).
+To zainstaluje główny pakiet. Uwaga: IOHprofiler może wymagać osobnej instalacji [^1].
 
 ### Opcja 2: ze źródeł (pełna kontrola)
 
@@ -32,7 +32,7 @@ Wersja ze źródeł daje dostęp do przykładów w `examples/`.
 ## Konfiguracja API key
 
 ```bash
-export OPENAI_API_KEY="sk-..."
+export OPENAI_API_KEY="***"
 ```
 
 Lub w kodzie:

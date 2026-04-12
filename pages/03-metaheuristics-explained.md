@@ -1,6 +1,6 @@
 # Metaheurystyki: Jak Strategia Przeszukuje Przestrzeń Rozwiązań
 
-**Metaheurystyka** to ramowy algorytm wysokiego poziomu, który dostarcza "heurystyk ogólnych" (general-purpose heuristics) do rozwiązywania trudnych obliczeniowo problemów optymalizacyjnych [[1]]([[1]]). W przeciwieństwie do algorytmu konkretnego (np. "sortowanie przez scalanie"), metaheurystyka to **strategia** którą można instantate dla różnych problemów.
+**Metaheurystyka** to ramowy algorytm wysokiego poziomu, który dostarcza "heurystyk ogólnych" (general-purpose heuristics) do rozwiązywania trudnych obliczeniowo problemów optymalizacyjnych [^1]. W przeciwieństwie do algorytmu konkretnego (np. "sortowanie przez scalanie"), metaheurystyka to **strategia** którą można instantate dla różnych problemów.
 
 ## Czym metaheurystyka różni się od heurystyki?
 
@@ -13,7 +13,7 @@
 
 ## Dwie składowe każdej metaheurystyki
 
-Każda metaheurystyka balansuje fundamentalny trade-off [[1]]([[1]])[[2]]([[2]]):
+Każda metaheurystyka balansuje fundamentalny trade-off [^1][^2]:
 
 **1. Eksploracja (Exploration)** — odkrywanie nowych regionów przestrzeni poszukiwań
 - Unikanie utknięcia w lokalnych minimach
@@ -52,7 +52,7 @@ Systematyczne zmiany struktury sąsiedztwa — gdy VNS utknie, zmienia definicj�
 
 ## Problem 500+ metaheurystyk
 
-Autorzy LLaMEA słusznie zauważają [[1]]([[1]]): w literaturze istnieje ponad 500 zaproponowanych metaheurystyk, ale większość to niewielkie modyfikacje istniejących metod, a **systematyczne porównanie z SOTA (state-of-the-art) jest rzadkością**.
+Autorzy LLaMEA słusznie zauważają [^1]: w literaturze istnieje ponad 500 zaproponowanych metaheurystyk, ale większość to niewielkie modyfikacje istniejących metod, a **systematyczne porównanie z SOTA (state-of-the-art) jest rzadkością**.
 
 Problem:
 - Nowa metaheurystyka pojawia się, jest "inspirowana" nową metaforą
@@ -64,7 +64,7 @@ LLaMEA **systematycznie rozwiązuje** ten problem przez automatyczne generowanie
 
 ## Modularny design metaheurystyk
 
-Nowoczesne podejście: zamiast projektować jeden algorytm, projektuj **moduły** które można rekombinować [[1]]([[1]]):
+Nowoczesne podejście: zamiast projektować jeden algorytm, projektuj **moduły** które można rekombinować [^1]:
 - Moduł inicjalizacji
 - Moduł mutacji
 - Moduł crossover
@@ -73,8 +73,8 @@ Nowoczesne podejście: zamiast projektować jeden algorytm, projektuj **moduły*
 
 To pozwala na przestrzeń milionów kombinacji — ale nadal wymaga eksperta do definiowania modułów.
 
-**LLaMEA idzie dalej** — zamiast rekombinować istniejące moduły, LLM **generuje zupełnie nowy kod algorytmu** [[1]]([[1]])[[2]]([[2]]).
+**LLaMEA idzie dalej** — zamiast rekombinować istniejące moduły, LLM **generuje zupełnie nowy kod algorytmu** [^1][^2].
 
 ---
 
-**Następna strona:** [[04-llamea-core-loop]] — jak LLM wchodzi do pętli ewolucyjnej
+**Następna strona:** [04 — Rdzeń LLaMEA](pages/04-llamea-core-loop) — jak LLM wchodzi do pętli ewolucyjnej

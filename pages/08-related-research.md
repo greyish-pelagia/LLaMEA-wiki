@@ -6,7 +6,7 @@ LLaMEA nie jest izolowanym projektem — wpisuje się w szerszy trend **automaty
 
 ### ArXiv 2601.12723: Evolutionary Framework for Automatic Optimization Benchmark Generation via LLMs
 
-Praca Ono, Harada, Miura (2026) [[1]]([[1]]) — bardzo bliska tematycznie do LLaMEA:
+Praca Ono, Harada, Miura (2026) [^1] — bardzo bliska tematycznie do LLaMEA:
 
 > Systematycznie pokazuje jak LLM może nie tylko generować algorytmy, ale też **generować nowe funkcje benchmarkowe**.
 
@@ -14,7 +14,7 @@ To drugi kierunek automatyzacji — jeśli LLaMEA automatyzuje projektowanie alg
 
 ### ArXiv 2604.06973: Block-Bench
 
-Ye, Neumann, Bäck, van Stein (2026) [[2]]([[2]]):
+Ye, Neumann, Bäck, van Stein (2026) [^2]:
 
 > Framework do **kontrolowanego i transparentnego benchmarkowania optymalizacji dyskretnej**.
 
@@ -24,7 +24,7 @@ Block-Bench to metologia benchmarkowania — nie generuje benchmarków LLM-em, a
 
 ### ArXiv 2604.08401: Verify Before You Commit
 
-Yuan et al. (2026) [[3]]([[3]]) — ważne dla zrozumienia **ograniczeń LLM**:
+Yuan et al. (2026) [^3] — ważne dla zrozumienia **ograniczeń LLM**:
 
 > LLM agents często propagują **niewiarygodne przekonania pośrednie** przez długie sekwencje decyzyjne.
 
@@ -34,7 +34,7 @@ Dla LLaMEA to bezpośrednio istotne: jeśli LLM źle zinterpretuje feedback z be
 
 ## Obszar 3: Fine-tuning LLM dla reasoning agents
 
-Źródła [[4]]([[4]]) opisują podejście:
+Źródła [^4] opisują podejście:
 
 > Fine-tuning mniejszych modeli (LLaMA 3.2-3B) na reasoning-specific datasets dla zadań matematycznych i kodowych.
 
@@ -42,7 +42,7 @@ To potencjalnie relevantne dla LLaMEA — czy zamiast GPT-4, można użyć fine-
 
 ## Obszar 4: Modularne frameworki automated design
 
-Tradycyjne (przed-LLM) podejścia do automatycznego projektowania [[1]]([[1]]):
+Tradycyjne (przed-LLM) podejścia do automatycznego projektowania [^1]:
 - Modularny CMA-ES (millions of module combinations)
 - Modularny DE
 - Modularny PSO
@@ -51,7 +51,7 @@ Wszystkie wymagają **eksperta** do zdefiniowania przestrzeni modułów. LLaMEA 
 
 ## AlphaEvolve (Google DeepMind)
 
-LLaMEA jest świadomie porównywane z AlphaEvolve [[5]]([[5]]):
+LLaMEA jest świadomie porównywane z AlphaEvolve [^5]:
 
 | Cecha | AlphaEvolve | LLaMEA |
 |-------|------------|--------|
@@ -64,7 +64,7 @@ LLaMEA jest **alternatywą open-source** z standardowym benchmarkiem.
 
 ## Przyszłe kierunki
 
-Według paperu [[1]]([[1]]):
+Według paperu [^1]:
 1. **Różne LLM** — przetestować GPT-4o, Claude, Gemini zamiast GPT-4
 2. **Różne selekcje** — tournament selection, multi-objective selection
 3. **Różne populacje** — większe populacje, island model
@@ -82,4 +82,4 @@ To fundamentalna zmiana w paradygmacie: **od ekspertyzy ręcznej do ekspertyzy e
 
 ---
 
-**Następna strona:** [[09-getting-started]] — jak uruchomić LLaMEA samodzielnie
+**Następna strona:** [09 — Pierwsze kroki](pages/09-getting-started) — jak uruchomić LLaMEA samodzielnie
