@@ -12,15 +12,15 @@ Generated algorithms **outperform** CMA-ES (Covariance Matrix Adaptation Evoluti
 
 | Page | Topic |
 |------|-------|
-| [[00-answer\|Start Here]] | TL;DR — what LLaMEA actually does and why it matters |
-| [[01-optimization-foundations\|01]] | Optimization foundations (gradient, gradient-free, box-constrained) |
-| [[02-evolutionary-computation\|02]] | Evolutionary computation (biological inspiration, algorithm portfolio) |
-| [[03-metaheuristics-explained\|03]] | Metaheuristics (exploration vs. exploitation, 500+ methods) |
-| [[04-llamea-core-loop\|04]] | **LLaMEA core loop** — how an LLM enters the evolutionary loop |
-| [[05-architecture\|05]] | System architecture and module integration |
-| [[06-bbob-benchmark\|06]] | BBOB benchmark and IOHprofiler |
-| [[07-experimental-results\|07]] | Experimental results and what they mean |
-| [[09-getting-started\|09]] | Installation and your first experiment |
+| [00 — Start Here](pages/00-answer) | TL;DR — what LLaMEA actually does and why it matters |
+| [01 — Optimization Foundations](pages/01-optimization-foundations) | Gradient, gradient-free, box-constrained |
+| [02 — Evolutionary Computation](pages/02-evolutionary-computation) | Biological inspiration, algorithm portfolio |
+| [03 — Metaheuristics Explained](pages/03-metaheuristics-explained) | Exploration vs. exploitation, 500+ methods |
+| [04 — LLaMEA Core Loop](pages/04-llamea-core-loop) | How an LLM enters the evolutionary loop |
+| [05 — Architecture](pages/05-architecture) | System architecture and module integration |
+| [06 — BBOB Benchmark](pages/06-bbob-benchmark) | BBOB benchmark and IOHprofiler |
+| [07 — Experimental Results](pages/07-experimental-results) | What LLaMEA actually achieves |
+| [09 — Getting Started](pages/09-getting-started) | Installation and your first experiment |
 
 ## About
 
